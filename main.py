@@ -16,7 +16,7 @@ print(df["sentiment"].unique())
 print(df["sentiment"].isnull().sum())
 print(df.shape)
 
-# STEP 2 Sentiment
+
 model, vectorizer = train_sentiment(df["clean"], df["sentiment"])
 sent_stats = sentiment_summary(model, vectorizer, df["clean"])
 
